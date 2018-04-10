@@ -35,7 +35,7 @@ public class WorldPopulation {
 		try {
 			FileReader fileReader = new FileReader(fileName);	
 			BufferedReader outputReader = new BufferedReader(fileReader);
-			StringTokenizer tokenizer;	/*Tokenizer, filters the data based on some delimeters. */
+			StringTokenizer tokenizer;	/*Tokenizer*/
 			String line;
 			while((line = outputReader.readLine()) != null) {
 				tokenizer = new StringTokenizer(line, ",");
@@ -77,6 +77,9 @@ public class WorldPopulation {
 	}
 	
 	
+	/**
+	Run program
+	**/
 	public static void main(String[] args) {
 		WorldPopulation worldPopulation = new WorldPopulation();
 		
